@@ -4,7 +4,7 @@
 
 <form method="GET" action="/cotacao">
 
-    <input name="cotacao" placeholder="Cotação !" autocomplete="off" pattern="[0-9]+([\.,][0-9]+)?" required
+    <input name="cotacao" placeholder="Cotação !" value= <%= cotacao %> autocomplete="off" pattern="[0-9]+([\.,][0-9]+)?" required
         onchange="this.value = this.value.replace(/,/g, '.')"><br>
 
     <input name="quantidade" placeholder="Quantidade desejada!" autocomplete="off" pattern="[0-9]+([\.,][0-9]+)?"
